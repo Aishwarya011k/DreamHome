@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Optional Custom Base Styles */
+body {
+  background-color: #FDF6F0;
+  color: #3D2C2C;
+}
+
+
+/* Custom Fonts (if any) can be added like this:
+@import url('https://fonts.googleapis.com/css2?family=YourFontName&display=swap');
+
+body {
+  font-family: 'YourFontName', sans-serif;
+}
+*/
+
+/* Optional utility overrides or component styles */
+/* Custom class that replicates the Tailwind utility classes */
+.custom-button {
+  background-color: var(--primaryBtn-color); /* You can replace this with your actual color */
+  color: white;
+  padding-left: 1.5rem; /* 6 * 0.25rem */
+  padding-right: 1.5rem;
+  padding-top: 0.5rem; /* 2 * 0.25rem */
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem; /* This is 8px for rounded-lg */
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Replace with actual hover color or effect */
+  opacity: 0.9;
+}
+
+
+.section {
+  @apply py-16 px-4 sm:px-8 lg:px-24;
+}
